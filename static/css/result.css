@@ -1,0 +1,88 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+	background-color: #f7f7f7;
+}
+.menu1 ul {
+    text-align: center;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    transition: 0.1s;}
+.bton{
+    display: inline-flex;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    padding:  10px 20px;
+    margin-left: 30px;
+	position: relative;
+
+}
+a:hover{
+color: black;
+}
+
+.bton::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgb(141, 255, 185);
+    z-index: -1;
+    transition: 0.3s;
+    top: 0;
+    border-radius:0 0 0 0;
+    animation-timing-function: ease-in;
+    height: 0;
+}
+.bton:hover::before{
+    height: 110%;
+}
+#map{
+	width: 850px;
+	position: absolute;
+	left: 9%;
+	top: 50%;
+	transform: translate(0%,-50%);
+}
+.result{
+    position: absolute;
+    height: 50%;
+    width: 670px;
+    top: 40%;
+    right: 5%;
+}
+h1{
+    padding-bottom: 30px;
+}
+.back{
+    color: #9c9c9c;
+}
+h3{
+    color: #686868;
+}
+.btn{
+	
+	width: 30%;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-color: #32be8f;
+	background-size: 200%;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .1s;
+}
+.btn:hover{
+	background-position: right;
+}

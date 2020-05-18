@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Path Finder</title>
+    <link rel="stylesheet" type="text/css"  href="{% static 'css/main.css' %}">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="menu1">
+        <ul>
+            <li class="bton"> <a href="#">Home</a> </li>
+            <li class="bton"> <a href="#">About</a> </li>
+            <li class="bton"> <a href="#">Services</a><li>
+        </ul>
+    </div>   
+    
+	<div class="container">
+		<div class="img">
+			<img src="{% static 'img/map.png' %}" id="map">
+		</div>
+		<div class="login-content">
+			<form action="add">
+				<h2 class="title">Path Finder
+                </h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		
+           		   		<input type="text" class="input" name="num1" placeholder="Source">
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		
+           		    	<input type="text" class="input" name="num2" placeholder="Destination">
+            	   </div>
+            	</div>
+                <br>
+                <input type="submit" class="btn" value="Navigate">
+            </form>
+        </div>
+    </div>    
+</body>
+</html>
